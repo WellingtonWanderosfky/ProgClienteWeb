@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <script>
+        function Fatorial() 
+        {
+            var n = document.getElementById("numero").value;
+            var result = Math.floor(n);
+            var text;
+            if(n>=0)
+            {
+                for( var  i = result-1 ; i>0;i--)
+                {
+                    result = result * i;
+                }
+                text = " O fatorial de " + n + " é " +result; 
+                document.getElementById("texto").innerHTML= text;
+            }
+            else
+            {
+                text = "Não pode ser negativo o número"; 
+                document.getElementById("texto").innerHTML= text;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <h3 id="texto"></h3>
+    <input type="number" id="numero" />
+    <button onclick="javascript:Fatorial()"> Executar </button>
+</body>
+
+</html>

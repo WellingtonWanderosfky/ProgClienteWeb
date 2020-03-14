@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <script>
+        function Palindromo() 
+        {
+            var n = document.getElementById("text").value;
+            var text = n;
+            for( var i = 0; i<=n.length ; i++)
+                text.charAT(i) = n.length - i;
+            alert(i);
+        }
+
+    </script>
+</head>
+
+<body>
+    <h3 id="texto"></h3>
+    <input type="text" id="text" />
+    <button onclick="javascript:Palindromo()"> Executar </button>
+</body>
+
+</html>
