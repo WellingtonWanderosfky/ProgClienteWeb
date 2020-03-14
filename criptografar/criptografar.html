@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <script>
+            function criptografar()
+            {
+                var palavra = document.getElementById("palavra").value;
+                palavra = palavra.replace('p','t');
+                palavra = palavra.replace('o','e');
+                palavra = palavra.replace('l','n');
+                palavra = palavra.replace('a','i');
+                palavra = palavra.replace('r','s');
+                document.getElementById("texto").innerHTML = palavra;
+            }
+        </script>
+    </head>
+    <body>
+        <h3 id="texto"></h3>
+        <h3 id="t"></h3>
+        <input type="text" id="palavra" />
+        <button onclick="javascript:criptografar()"> Executar </button>
+    </body>
+</html>
